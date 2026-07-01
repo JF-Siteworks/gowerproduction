@@ -1,0 +1,174 @@
+.work {
+  padding: 100px 40px;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.work-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.6s ease;
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.work-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.work-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition:
+    opacity 0.4s ease,
+    transform 0.6s ease;
+}
+
+.work-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  opacity: 0;
+  transition:
+    opacity 0.4s ease,
+    transform 0.6s ease;
+  pointer-events: none;
+}
+
+.work-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.2),
+    transparent
+  );
+
+  z-index: 2;
+}
+
+.work-item:hover .work-img {
+  opacity: 0;
+  transform: scale(1.05);
+}
+
+.work-item:hover .work-video {
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+.work-overlay h3,
+h2 {
+  color: var(--color-text-primary);
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.work-overlay p {
+  color: var(--color-text-secondary);
+  font-family: "Inter", sans-serif;
+}
+
+.work h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+  color: var(--color-text-primary);
+}
+
+.work h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: var(--color-accent);
+  margin-top: 10px;
+}
+
+.intro {
+  padding: 100px 40px;
+}
+
+.intro h3 {
+  max-width: 750px;
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: var(--color-text-primary);
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.intro h3::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: var(--color-accent);
+  margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+  .work {
+    padding: 80px 20px;
+  }
+
+  .work-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .work h2 {
+    font-size: 2rem;
+    margin-bottom: 35px;
+  }
+
+  .intro {
+    padding: 80px 20px;
+  }
+
+  .intro h3 {
+    max-width: 100%;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .work {
+    padding: 60px 16px;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .work h2 {
+    font-size: 1.75rem;
+    margin-bottom: 28px;
+  }
+
+  .intro {
+    padding: 60px 16px;
+  }
+
+  .intro h3 {
+    font-size: 1.15rem;
+    line-height: 1.8;
+  }
+}
