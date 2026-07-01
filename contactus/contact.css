@@ -1,0 +1,72 @@
+.contactus {
+  padding: 60px 40px;
+  background-color: var(--color-bg-secondary);
+}
+
+.contactus h2 {
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--color-text-primary);
+  font-size: 2.2rem;
+}
+
+.contactus h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: var(--color-accent);
+  margin-top: 10px;
+}
+
+
+.contactus h3 {
+  font-family: "Space Grotesk", sans-serif;
+  margin: 20px 0 0;
+  color: var(--color-text-primary);
+}
+
+.contact-block a {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-family: "Space Grotesk", sans-serif;
+  transition: color 0.3s ease;
+}
+
+.contact-block a:hover {
+  color: var(--color-accent);
+}
+
+.social-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  font-family: "Space Grotesk", sans-serif;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* subtle underline effect */
+.social-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 1px;
+  background: var(--color-accent);
+  transition: width 0.3s ease;
+}
+
+.social-link:hover {
+  color: var(--color-text-primary);
+}
+
+.social-link:hover::after {
+  width: 100%;
+}

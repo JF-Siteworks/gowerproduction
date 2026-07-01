@@ -1,0 +1,124 @@
+.form-container {
+  width: 100%;
+  padding: 100px 40px;
+  font-family: "Space Grotesk", sans-serif;
+  background-color: var(--color-bg-primary);
+}
+
+.form-header {
+  max-width: 1200px;
+  margin-bottom: 40px;
+}
+
+.form-header h2 {
+  text-align: left;
+  color: var(--color-text-primary);
+  font-size: 2.2rem;
+}
+
+.form-header h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: var(--color-accent);
+  margin-top: 10px;
+}
+
+.custom-form {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.submit-btn-wrapper {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.left-inputs,
+.right-input {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.left-inputs input,
+.right-input textarea {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  background: transparent;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--color-text-primary);
+
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+
+  outline: none;
+  transition:
+    border 0.3s ease,
+    transform 0.3s ease;
+}
+
+.left-inputs input:focus,
+.right-input textarea:focus {
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.left-inputs input::placeholder,
+.right-input textarea::placeholder {
+  color: var(--color-text-secondary);
+  opacity: 0.7;
+}
+
+.right-input textarea {
+  min-height: 220px;
+  resize: none;
+}
+
+/* BUTTON */
+.submit-btn {
+  padding: 0.75rem 1.25rem;
+  border: 1px solid var(--color-text-primary);
+  text-decoration: none;
+  color: var(--color-text-primary);
+  font-family: "Space Grotesk", sans-serif;
+  transition: all 0.3s ease;
+  background-color: var(--color-bg-primary);
+  font-size: 0.95rem;
+  height: auto;
+  min-width: 110px;
+  cursor: pointer;
+}
+
+/* HOVER */
+.submit-btn:hover {
+  transform: scale(1.15);
+  background: var(--color-text-primary);
+  color: var(--color-bg-primary);
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+  .form-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .custom-form {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .right-input textarea {
+    min-height: 160px;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+}
