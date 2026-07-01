@@ -1,0 +1,348 @@
+.services-intro {
+  padding: 100px 40px;
+  background: var(--color-bg-primary);
+}
+
+.services-intro-container {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.services-intro h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2.8rem;
+  color: var(--color-text-primary);
+  margin-bottom: 25px;
+}
+
+.services-intro h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: var(--color-accent);
+  margin-top: 10px;
+}
+
+.services-intro p {
+  color: var(--color-text-secondary);
+  font-family: "Inter", sans-serif;
+  line-height: 1.8;
+  font-size: 1.15rem;
+}
+
+.services-page {
+  padding: 100px 40px;
+  background-color: var(--color-bg-secondary);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.service-card {
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition:
+    transform 0.4s ease,
+    border-color 0.4s ease;
+}
+
+.service-card h3 {
+  font-family: "Space Grotesk", sans-serif;
+  margin-bottom: 10px;
+  color: var(--color-text-primary);
+}
+
+.service-card p {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  font-family: "Inter", sans-serif;
+}
+
+/* hover = subtle, not UI-heavy */
+.service-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-accent);
+}
+
+.services-page h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+  color: var(--color-text-primary);
+}
+
+.services-page h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: var(--color-accent);
+  margin-top: 10px;
+}
+
+.service-details {
+  padding: 0;
+}
+
+.service-details-text {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 35.2px;
+  color: var(--color-text-primary);
+  padding: 50px 40px;
+}
+
+.service-details h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: var(--color-accent);
+  margin-top: 10px;
+}
+
+.detail-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 48px;
+  margin: 0 !important;
+  color: var(--color-text-primary);
+}
+
+.detail-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  margin-bottom: 0;
+  background-color: var(--color-bg-primary);
+  padding: 40px 40px;
+}
+
+.reverse {
+  background-color: var(--color-bg-secondary);
+}
+
+.detail-row.reverse .detail-text {
+  order: 2;
+}
+
+.detail-row.reverse .detail-image {
+  order: 1;
+}
+
+.detail-text span {
+  font-size: 14px;
+  color: var(--color-accent);
+  letter-spacing: 3px;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.detail-text h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 48px;
+  margin: 20px 0;
+  color: var(--color-text-primary);
+}
+
+.detail-text p {
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  max-width: 500px;
+  font-family: "Inter", sans-serif;
+}
+
+.detail-text ul {
+  margin-top: 25px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.detail-text li {
+  margin-bottom: 10px;
+  color: var(--color-text-primary);
+  font-family: "Inter", sans-serif;
+}
+
+.detail-text li::before {
+  content: "→";
+  color: var(--color-accent);
+  margin-right: 10px;
+}
+
+.detail-image {
+  height: 500px;
+  overflow: hidden;
+}
+
+.detail-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.detail-image:hover img {
+  transform: scale(1.05);
+}
+
+.process {
+  padding: 100px 40px;
+  background: var(--color-bg-primary);
+}
+
+.process-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.process-header {
+  max-width: 750px;
+  margin-bottom: 80px;
+}
+
+.process-header h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  color: var(--color-text-primary);
+}
+
+.process-header h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: var(--color-accent);
+  margin-top: 10px;
+}
+
+.process-header p {
+  font-family: "Inter", sans-serif;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+.process-list {
+  border-top: 1px solid var(--color-border);
+}
+
+.process-item {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 40px;
+
+  padding: 45px 0;
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.process-item span {
+  color: var(--color-accent);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1rem;
+}
+
+.process-item h3 {
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--color-text-primary);
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.process-item p {
+  max-width: 600px;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  font-family: "Inter", sans-serif;
+}
+
+.cta {
+  background-color: var(--color-bg-secondary) !important;
+}
+
+@media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .detail-row,
+  .detail-row.reverse {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 40px 25px;
+  }
+
+  .detail-row.reverse .detail-text,
+  .detail-row.reverse .detail-image {
+    order: initial;
+  }
+
+  .detail-text h2 {
+    font-size: 2rem;
+  }
+
+  .detail-image {
+    height: 340px;
+  }
+
+  .process-item {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-intro,
+  .services-page,
+  .process {
+    padding: 70px 20px;
+  }
+
+  .services-intro h2,
+  .services-page h2,
+  .service-details h2,
+  .process-header h2 {
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+
+  .services-page h2,
+  .service-details h2 {
+    margin-bottom: 30px;
+    margin-left: 0;
+  }
+
+  .service-card {
+    padding: 24px;
+  }
+
+  .detail-row .detail-row.reverse {
+    padding: 40px 25px;
+  }
+
+  .detail-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .detail-image {
+    height: 260px;
+  }
+
+  .process-header {
+    margin-bottom: 50px;
+  }
+
+  .process-item {
+    padding: 30px 0;
+    gap: 12px;
+  }
+
+  .process-item h3 {
+    font-size: 1.3rem;
+  }
+}
