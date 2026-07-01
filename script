@@ -1,0 +1,24 @@
+  const sections = document.querySelectorAll(".work, .services, .cta, .about, .footer, .about-intro, .founding");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+
+        const items = entry.target.querySelectorAll(
+          ".fade-up",
+        );
+
+        items.forEach((el, index) => {
+          setTimeout(() => {
+            el.classList.add("show");
+          }, index * 200);
+        });
+
+        observer.unobserve(entry.target);
+      });
+    },
+    {
+      threshold: 0.2,
+    },
+  );
