@@ -67,14 +67,16 @@
   z-index: 2;
 }
 
-.work-item:hover .work-img {
-  opacity: 0;
-  transform: scale(1.05);
-}
+@media (hover: hover) and (pointer: fine) {
+  .work-item:hover .work-img {
+    opacity: 0;
+    transform: scale(1.05);
+  }
 
-.work-item:hover .work-video {
-  opacity: 1;
-  transform: scale(1.15);
+  .work-item:hover .work-video {
+    opacity: 1;
+    transform: scale(1.15);
+  }
 }
 
 .work-overlay h3,
@@ -148,14 +150,16 @@ h2 {
     font-size: 1.3rem;
   }
 
+  @media (hover: hover) and (pointer: fine) {
     .work-item:hover .work-img {
-    opacity: 1;
-    transform: scale(1);
-  }
+      opacity: 1;
+      transform: scale(1);
+    }
 
-  .work-item:hover .work-video {
-    opacity: 0;
-    transform: scale(1);
+    .work-item:hover .work-video {
+      opacity: 0;
+      transform: scale(1);
+    }
   }
 }
 
@@ -182,3 +186,4 @@ h2 {
     line-height: 1.8;
   }
 }
+
