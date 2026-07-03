@@ -38,13 +38,15 @@
   text-decoration: none;
   color: var(--color-text-primary);
   font-family: "Space Grotesk", sans-serif;
-  transition: all 0.3s cubic-bezier(0.33, 1, 0.68, 1); 
+  transition: all 0.3s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
-.cta-btn:hover {
-  transform: translateY(0) scale(1.15);
-  background: var(--color-text-primary);
-  color: var(--color-bg-primary);
+@media (hover: hover) and (pointer: fine) {
+  .cta-btn:hover {
+    transform: translateY(0) scale(1.15);
+    background: var(--color-text-primary);
+    color: var(--color-bg-primary);
+  }
 }
 
 @media (max-width: 900px) {
@@ -85,3 +87,4 @@
     text-align: center;
   }
 }
+
