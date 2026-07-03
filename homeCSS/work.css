@@ -147,6 +147,16 @@ h2 {
     max-width: 100%;
     font-size: 1.3rem;
   }
+
+    .work-item:hover .work-img {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .work-item:hover .work-video {
+    opacity: 0;
+    transform: scale(1);
+  }
 }
 
 @media (max-width: 600px) {
