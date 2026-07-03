@@ -33,8 +33,10 @@
   transition: color 0.3s ease;
 }
 
-.contact-block a:hover {
-  color: var(--color-accent);
+@media (hover: hover) and (pointer: fine) {
+  .contact-block a:hover {
+    color: var(--color-accent);
+  }
 }
 
 .social-grid {
@@ -63,10 +65,12 @@
   transition: width 0.3s ease;
 }
 
-.social-link:hover {
-  color: var(--color-text-primary);
-}
+@media (hover: hover) and (pointer: fine) {
+  .social-link:hover {
+    color: var(--color-text-primary);
+  }
 
-.social-link:hover::after {
-  width: 100%;
+  .social-link:hover::after {
+    width: 100%;
+  }
 }
