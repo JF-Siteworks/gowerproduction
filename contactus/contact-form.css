@@ -97,10 +97,12 @@
 }
 
 /* HOVER */
-.submit-btn:hover {
-  transform: scale(1.15);
-  background: var(--color-text-primary);
-  color: var(--color-bg-primary);
+@media (hover: hover) and (pointer: fine) {
+  .submit-btn:hover {
+    transform: scale(1.15);
+    background: var(--color-text-primary);
+    color: var(--color-bg-primary);
+  }
 }
 
 /* MOBILE */
