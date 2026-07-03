@@ -4,20 +4,29 @@
 
 .about-container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .about-lead {
-  max-width: 800px;
+  max-width: 750px;
   font-size: 1.4rem;
   line-height: 1.7;
   color: var(--color-text-primary);
-  font-family: "Inter", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.about-lead::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: var(--color-accent);
+  margin-top: 10px;
 }
 
 .founding {
   padding: 100px 40px;
-  background: var(--color-bg-secondary);
+  background: var(--color-bg-primary);
 }
 
 .founding h2 {
@@ -53,13 +62,15 @@
   transition: 0.5s ease;
 }
 
-.founding-image img:hover {
-  transform: scale(1.02);
+@media (hover: hover) and (pointer: fine) {
+  .founding-image img:hover {
+    transform: scale(1.02);
+  }
 }
 
 .approach {
   padding: 100px 40px;
-  background: var(--color-bg-primary);
+  background: var(--color-bg-secondary);
 }
 
 .approach h2 {
@@ -106,7 +117,7 @@
 
 .founder {
   padding: 100px 40px;
-  background: var(--color-bg-secondary);
+  background: var(--color-bg-primary);
 }
 
 .founder-grid {
@@ -123,8 +134,10 @@
   transition: 0.5s ease;
 }
 
-.founder-image img:hover {
-  transform: scale(1.02);
+@media (hover: hover) and (pointer: fine) {
+  .founder-image img:hover {
+    transform: scale(1.02);
+  }
 }
 
 .founder-content h3 {
@@ -155,6 +168,11 @@
   max-width: 500px;
   font-family: "Inter", sans-serif;
 }
+
+.cta {
+  background-color: var(--color-bg-secondary) !important;
+}
+
 @media (max-width: 900px) {
   .about-intro,
   .founding,
