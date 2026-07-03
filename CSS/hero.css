@@ -18,8 +18,6 @@
   animation: heroZoom 12s ease-out forwards;
 }
 
-
-/* existing overlay */
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -77,11 +75,12 @@
   font-family: "Space Grotesk", sans-serif;
 }
 
-
-.btn:hover {
-  transform: scale(1.15);
-  background: var(--color-text-primary);
-  color: var(--color-bg-primary);
+@media (hover: hover) and (pointer: fine) {
+  .btn:hover {
+    transform: scale(1.15);
+    background: var(--color-text-primary);
+    color: var(--color-bg-primary);
+  }
 }
 
 
