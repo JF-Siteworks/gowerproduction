@@ -60,12 +60,14 @@
   transition: width 0.3s ease;
 }
 
-.nav-links a:hover {
-  transform: scale(1.25);
-}
+@media (hover: hover) and (pointer: fine) {
+  .nav-links a:hover {
+    transform: scale(1.25);
+  }
 
-.nav-links a:hover::after {
-  width: 100%;
+  .nav-links a:hover::after {
+    width: 100%;
+  }
 }
 
 .nav-cta {
@@ -77,10 +79,12 @@
   transition: all 0.3s ease;
 }
 
-.nav-cta:hover {
-  transform: scale(1.15);
-  background: var(--color-text-primary);
-  color: var(--color-bg-primary);
+@media (hover: hover) and (pointer: fine) {
+  .nav-cta:hover {
+    transform: scale(1.15);
+    background: var(--color-text-primary);
+    color: var(--color-bg-primary);
+  }
 }
 
 @keyframes fadeInNav {
@@ -218,8 +222,10 @@
     transition: 0.25s ease;
   }
 
-  .mobile-menu a:hover {
-    transform: translateX(8px);
+  @media (hover: hover) and (pointer: fine) {
+    .mobile-menu a:hover {
+      transform: translateX(8px);
+    }
   }
 
   .mobile-menu-cta {
@@ -234,9 +240,11 @@
     transition: all 0.25s ease;
   }
 
-  .mobile-menu-cta:hover {
-    background: var(--color-accent);
-    color: var(--color-bg-primary);
-    transform: translateY(-2px);
+  @media (hover: hover) and (pointer: fine) {
+    .mobile-menu-cta:hover {
+      background: var(--color-accent);
+      color: var(--color-bg-primary);
+      transform: translateY(-2px);
+    }
   }
 }
